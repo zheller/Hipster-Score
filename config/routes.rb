@@ -6,4 +6,6 @@ Hipsterscore::Application.routes.draw do
   root :to => "pages#index"
   
   match "/auth/facebook/callback" => "sessions#create"
+  match "/signout" => "sessions#destroy"
+  
 end

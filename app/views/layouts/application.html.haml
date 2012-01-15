@@ -8,4 +8,8 @@
   %body
     %p.notice= notice
     %p.alert= alert
+    - if current_user
+      %div{:style => "float:right;"}
+        %p= current_user.name
+        %a{:href => "/signout"} Signout
     = yield
