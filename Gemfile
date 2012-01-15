@@ -5,9 +5,12 @@ gem 'rails', '3.1.1'
 # Bundle edge Rails instead:
 # gem 'rails',     :git => 'git://github.com/rails/rails.git'
 
-gem 'sqlite3'
-gem 'mongo_mapper'
 gem 'bson_ext'
+gem 'mongo_mapper'
+gem 'haml'
+gem 'haml-rails'
+gem 'omniauth'
+gem 'omniauth-facebook'
 
 # Gems used only for assets and not required
 # in production environments by default.
