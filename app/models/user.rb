@@ -7,9 +7,14 @@ class User
     key :access_token, String 
     
     attr_accessible :name, :email, :nickname, :uid, :access_token
+    
     def self.create_with_omniauth(auth)
       @user = User.create!(:name => auth["info"]["name"], :email => auth["info"]['email'], :uid => auth['uid'], :access_token => auth["credentials"]["token"], :nickname => auth["info"]["nickname"])
-      @user.save!
-      @user
+    end
+    
+    def self.find_artists(user)
+      if user.access_token?
+        
+      end
     end
 end
