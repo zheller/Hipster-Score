@@ -1,0 +1,20 @@
+
+@import "compass";
+@import "modules/_modules";
+
+
+
+
+//styles for the application layout file
+
+@import "views/shared/_header";
+
+body {
+    background:$bg-color url('/assets/bg.png');
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+.container {
+    margin: 0 auto;
+    width: 1050px;
+}

@@ -12,6 +12,12 @@ if defined?(Bundler)
   # Bundler.require(:default, :assets, Rails.env)
 end
 
+module Compass
+  RAILS_LOADED = TRUE;
+end
+
+
+
 module Hipsterscore
   class Application < Rails::Application
     # Settings in config/environments/* take precedence over those specified here.
@@ -52,5 +58,9 @@ module Hipsterscore
 
     # Version of your assets, change this if you want to expire all your assets
     config.assets.version = '1.0'
+
+
+    #make compass work with rails 3.1 asset pipeline
+    config.sass.load_paths << Compass::Frameworks['compass'].stylesheets_directory
   end
 end
