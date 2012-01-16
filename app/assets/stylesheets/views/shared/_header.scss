@@ -1,9 +1,37 @@
-#branding{
-  background:$bg-color image-url('/assets/header.png') no-repeat center top;
-  height:469px;
-
-  h1{
-    position:absolute;
-    @include hide-text();
-  }
+header#branding {
+    background-image: url('/assets/header.png');
+    width: 880px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 220px 0px 100px 0px;
+    
+    h2, #facebook-button {
+        position: relative;
+        right: 20px;
+    }
+    
+    h2 {
+        color: #fff;
+        font-weight: 400;
+        text-align: center;
+        font-size: 1.25em;
+        right: 15px;
+        text-shadow: 0px 1px 0px #ADB5A0 - #222;
+        margin-bottom: 30px;
+    }
+    #facebook-button {
+        background-image: url('/assets/fb-sprite.png');
+        height: 47px;
+        width: 223px;
+        display: inline-block;
+        text-indent: -5000px;
+        &:hover {
+            background-position: -225px;
+        }
+        &:active {
+            background-position: 226px;
+        }
+    }
 }
+
+
