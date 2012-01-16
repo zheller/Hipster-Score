@@ -1,0 +1,9 @@
+#branding{
+  background:$bg-color image-url('/assets/header.png') no-repeat center top;
+  height:469px;
+
+  h1{
+    position:absolute;
+    @include hide-text();
+  }
+}
