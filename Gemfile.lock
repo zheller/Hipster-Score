@@ -67,6 +67,9 @@ GEM
       railties (~> 3.0)
     hashie (1.2.0)
     hike (1.2.1)
+    httparty (0.8.1)
+      multi_json
+      multi_xml
     i18n (0.6.0)
     jquery-rails (1.0.19)
       railties (~> 3.0)
@@ -91,6 +94,7 @@ GEM
       activesupport (~> 3.0)
       plucky (~> 0.4.0)
     multi_json (1.0.4)
+    multi_xml (0.4.1)
     multipart-post (1.1.4)
     net-http-digest_auth (1.2)
     net-http-persistent (2.3.3)
@@ -186,6 +190,7 @@ DEPENDENCIES
   compass
   haml
   haml-rails
+  httparty
   jquery-rails
   json
   mechanize

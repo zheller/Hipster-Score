@@ -41,8 +41,9 @@ module Hipsterscore
     # The default locale is :en and all translations from config/locales/*.rb,yml are auto loaded.
     # config.i18n.load_path += Dir[Rails.root.join('my', 'locales', '*.{rb,yml}').to_s]
     # config.i18n.default_locale = :de
-    
+
     # config generators
+
     config.generators do |g|
       g.orm :mongo_mapper
     end
@@ -58,7 +59,6 @@ module Hipsterscore
 
     # Version of your assets, change this if you want to expire all your assets
     config.assets.version = '1.0'
-
 
     #make compass work with rails 3.1 asset pipeline
     config.sass.load_paths << Compass::Frameworks['compass'].stylesheets_directory
