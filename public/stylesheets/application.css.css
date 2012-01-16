@@ -1,0 +1,133 @@
+/* ========= */
+/* = Color = */
+/* ========= */
+/* line 1, ../../app/assets/stylesheets/scaffolds.css.scss */
+/* line 3, ../../app/assets/stylesheets/modules/_scaffolds.scss */
+body {
+  background-color: #fff;
+  color: #333;
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+/* line 8, ../../app/assets/stylesheets/scaffolds.css.scss */
+/* line 12, ../../app/assets/stylesheets/modules/_scaffolds.scss */
+p, ol, ul, td {
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+/* line 13, ../../app/assets/stylesheets/scaffolds.css.scss */
+/* line 19, ../../app/assets/stylesheets/modules/_scaffolds.scss */
+pre {
+  background-color: #eee;
+  padding: 10px;
+  font-size: 11px;
+}
+
+/* line 18, ../../app/assets/stylesheets/scaffolds.css.scss */
+/* line 26, ../../app/assets/stylesheets/modules/_scaffolds.scss */
+a {
+  color: #000;
+}
+
+/* line 20, ../../app/assets/stylesheets/scaffolds.css.scss */
+/* line 30, ../../app/assets/stylesheets/modules/_scaffolds.scss */
+a:visited {
+  color: #666;
+}
+
+/* line 22, ../../app/assets/stylesheets/scaffolds.css.scss */
+/* line 34, ../../app/assets/stylesheets/modules/_scaffolds.scss */
+a:hover {
+  color: #fff;
+  background-color: #000;
+}
+
+/* line 27, ../../app/assets/stylesheets/scaffolds.css.scss */
+/* line 40, ../../app/assets/stylesheets/modules/_scaffolds.scss */
+div.field, div.actions {
+  margin-bottom: 10px;
+}
+
+/* line 30, ../../app/assets/stylesheets/scaffolds.css.scss */
+/* line 45, ../../app/assets/stylesheets/modules/_scaffolds.scss */
+#notice {
+  color: green;
+}
+
+/* line 33, ../../app/assets/stylesheets/scaffolds.css.scss */
+/* line 50, ../../app/assets/stylesheets/modules/_scaffolds.scss */
+.field_with_errors {
+  padding: 2px;
+  background-color: red;
+  display: table;
+}
+
+/* line 38, ../../app/assets/stylesheets/scaffolds.css.scss */
+/* line 57, ../../app/assets/stylesheets/modules/_scaffolds.scss */
+#error_explanation {
+  width: 450px;
+  border: 2px solid red;
+  padding: 7px;
+  padding-bottom: 0;
+  margin-bottom: 20px;
+  background-color: #f0f0f0;
+}
+
+/* line 45, ../../app/assets/stylesheets/scaffolds.css.scss */
+/* line 66, ../../app/assets/stylesheets/modules/_scaffolds.scss */
+#error_explanation h2 {
+  text-align: left;
+  font-weight: bold;
+  padding: 5px 5px 5px 15px;
+  font-size: 12px;
+  margin: -7px;
+  margin-bottom: 0px;
+  background-color: #c00;
+  color: #fff;
+}
+
+/* line 54, ../../app/assets/stylesheets/scaffolds.css.scss */
+/* line 77, ../../app/assets/stylesheets/modules/_scaffolds.scss */
+#error_explanation ul li {
+  font-size: 12px;
+  list-style: square;
+}
+
+/* line 1, ../../app/assets/stylesheets/modules/_typography.scss */
+body {
+  color: #fff;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
+}
+
+/* line 2, ../../app/assets/stylesheets/modules/_base.scss */
+body {
+  background-color: #c6ceb9;
+  padding: 0;
+  margin: 0;
+}
+/* line 53, ../../../../.rvm/gems/ruby-1.9.2-p290@hipsterscore/gems/compass-0.11.7/frameworks/compass/stylesheets/compass/typography/_vertical_rhythm.scss */
+body body {
+  font-size: 100%;
+  line-height: 1.5em;
+}
+/* line 57, ../../../../.rvm/gems/ruby-1.9.2-p290@hipsterscore/gems/compass-0.11.7/frameworks/compass/stylesheets/compass/typography/_vertical_rhythm.scss */
+body html > body {
+  font-size: 16px;
+}
+
+/* line 1, ../../app/assets/stylesheets/views/shared/_header.scss */
+#branding {
+  background: #c6ceb9 url(/assets/header.png) no-repeat center top;
+  height: 469px;
+}
+/* line 5, ../../app/assets/stylesheets/views/shared/_header.scss */
+#branding h1 {
+  position: absolute;
+  text-indent: -119988px;
+  overflow: hidden;
+  text-align: left;
+}
