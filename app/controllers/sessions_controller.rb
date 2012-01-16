@@ -1,6 +1,8 @@
 class SessionsController < ApplicationController
+  
   def create
     auth = request.env["omniauth.auth"] 
+    puts auth
     user = User.find_by_email(auth["info"]["email"]) || User.create_with_omniauth(auth)
     session[:user_id] = user.id
     redirect_to '/users/' + user.nickname

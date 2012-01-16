@@ -9,4 +9,9 @@ class PagesController < ApplicationController
       format.json { render json: @pages }
     end
   end
+  
+  def failure
+    raise params.to_yaml
+  end
+  
 end
