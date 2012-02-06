@@ -2,9 +2,10 @@ class SessionsController < ApplicationController
   
   def create
     auth = request.env["omniauth.auth"]
-    user = User.find_by_email(auth["info"]["email"]) || User.create_with_omniauth(auth)
+    user = User.find_by_email(auth["info"]["email"]) 
     session[:user_id] = user.id
-    redirect_to '/users/' + user.nickname
+    path = user.nickname || user.uid
+    redirect_to '/users/' + path
   end
   
   def destroy

@@ -7,6 +7,9 @@ class Artist
     
     attr_accessible :name, :hipster
     
+    # need to take out initial the 
+    # need to take out any special characters such as & ( )
+    
     def self.initilize_db
       File.open("#{Rails.root.to_s}/lib/billboard/billboard-artists.txt", 'r') do |file|
         x = []

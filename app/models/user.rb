@@ -34,20 +34,23 @@ class User
     delta = 50 / self.artists.count.to_f
     
     self.artists.each do |artist|
-      @test_artist = Artist.find_by_name(artist)
-      if @test_artist
-        if @test_artist.hipster?
+      @myartist = Artist.find_by_name(artist)
+      if @myartist
+        if @myartist.hipster?
           base_score += delta
+          puts "Hipster: #{@myartist.name} + #{delta}"
         else
           base_score -= delta
+          puts "Mainstream: #{@myartist.name} - #{delta}"
         end
       else
         base_score
+        puts "Nil #{artist}"
       end
     end
     time_stop = Time.now
-    puts (time_stop - time_start) * 1000
-    puts base_score
+    puts "Time: #{(time_stop - time_start) * 1000} ms"
+    puts "Score: #{base_score}"
   end
   
   
