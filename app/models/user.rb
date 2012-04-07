@@ -15,6 +15,7 @@ class User
     def self.create_with_omniauth(auth)
       @user = User.create!(:name => auth["info"]["name"], :email => auth["info"]['email'], :uid => auth['uid'], :access_token => auth["credentials"]["token"], :nickname => auth["info"]["nickname"])
       @user.save_music()
+      @user.calc_score()
     end
     
    
@@ -26,7 +27,7 @@ class User
         fix = artist['name'].lstrip.rstrip.downcase!
         self.add_to_set(:artists => fix)
       end
-    end
+   end
   
   def calc_score
     time_start = Time.now
@@ -38,18 +39,20 @@ class User
       if @myartist
         if @myartist.hipster?
           base_score += delta
-          puts "Hipster: #{@myartist.name} + #{delta}"
+          #puts "Hipster: #{@myartist.name} + #{delta}"
         else
           base_score -= delta
-          puts "Mainstream: #{@myartist.name} - #{delta}"
+          #puts "Mainstream: #{@myartist.name} - #{delta}"
         end
       else
         base_score
-        puts "Nil #{artist}"
+        #puts "Nil #{artist}"
       end
-      time_stop = Time.now
-      puts "Time: #{(time_stop - time_start) * 1000} ms"
-      puts "Score: #{base_score}"
+      #time_stop = Time.now
+      #puts "Time: #{(time_stop - time_start) * 1000} ms"
+      #puts "Score: #{base_score}"
     end
-  
+    self.set(:score => base_score)
+    return base_score
+  end
 end
