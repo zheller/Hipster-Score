@@ -29,29 +29,27 @@ class User
     end
   
   def calc_score
-      time_start = Time.now
-      base_score = 50
-      delta = 50 / self.artists.count.to_f
-
-      self.artists.each do |artist|
-        @myartist = Artist.find_by_name(artist)
-        if @myartist
-          if @myartist.hipster?
-            base_score += delta
-            puts "Hipster: #{@myartist.name} + #{delta}"
-          else
-            base_score -= delta
-            puts "Mainstream: #{@myartist.name} - #{delta}"
-          end
+    time_start = Time.now
+    base_score = 50
+    delta = 50 / self.artists.count.to_f
+    
+    self.artists.each do |artist|
+      @myartist = Artist.find_by_name(artist)
+      if @myartist
+        if @myartist.hipster?
+          base_score += delta
+          puts "Hipster: #{@myartist.name} + #{delta}"
         else
-          base_score
-          puts "Unknown: #{artist}"
+          base_score -= delta
+          puts "Mainstream: #{@myartist.name} - #{delta}"
         end
+      else
+        base_score
+        puts "Nil #{artist}"
       end
       time_stop = Time.now
       puts "Time: #{(time_stop - time_start) * 1000} ms"
       puts "Score: #{base_score}"
     end
-
   
 end
