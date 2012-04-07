@@ -12,7 +12,8 @@ test:
 
 # set these environment variables on your prod server
 production:
-  <<: *defaults
-  database: hipsterscore
+  host: flame.mongohq.com
+  port: 27077
+  database: hipster_score
   username: <%= ENV['MONGO_USERNAME'] %>
   password: <%= ENV['MONGO_PASSWORD'] %>
