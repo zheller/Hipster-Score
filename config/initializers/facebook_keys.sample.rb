@@ -2,5 +2,5 @@
 
 
 # Set facebook app id
-ENV['APP_ID'] = 'app id here'
-ENV['APP_SECRET'] = 'app secret here'
+# ENV['APP_ID'] = 'app id here'
+# ENV['APP_SECRET'] = 'app secret here'
