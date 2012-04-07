@@ -8,7 +8,7 @@ class User
     key :artists, Array
     key :score
     
-    attr_accessible :name, :email, :nickname, :uid, :access_token
+    attr_accessible :name, :email, :nickname, :uid, :access_token, :artists
     
     ensure_index :email
     
